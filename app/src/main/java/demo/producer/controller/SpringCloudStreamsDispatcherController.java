@@ -17,7 +17,7 @@ import java.util.concurrent.CompletableFuture;
 
 @RestController()
 @Slf4j
-@RequestMapping("/stream-bridge")
+@RequestMapping("/spring-cloud-stream")
 public class SpringCloudStreamsDispatcherController {
     @Autowired
     private StreamBridge streamBridge;
@@ -54,7 +54,7 @@ public class SpringCloudStreamsDispatcherController {
                     .setHeader("bookingNum", value.length())
                     .build();
 
-            streamBridge.send("stream-bridge", message);
+            streamBridge.send("spring-cloud-stream", message);
             
         return true;
     }

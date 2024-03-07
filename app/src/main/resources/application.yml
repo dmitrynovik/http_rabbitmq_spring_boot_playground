@@ -20,8 +20,8 @@ spring:
     stream:
       #dynamic-destination-cache-size: 10
       bindings:
-        stream-bridge:
-          destination: stream-bridge
+        spring-cloud-stream:
+          destination: spring-cloud-stream
         spring-amqp:
           destination: spring-amqp
       rabbit:
@@ -34,9 +34,9 @@ spring:
             declareExchange: false
             consumerTagPrefix: spring-http-perf-test
         bindings:
-          stream-bridge:
+          spring-cloud-stream:
             producer:
-              routing-key-expression: '"stream-cloud-stream"'
+              routing-key-expression: '"spring-cloud-stream"'
           spring-amqp:
             producer:
               routing-key-expression: '"spring-amqp"'

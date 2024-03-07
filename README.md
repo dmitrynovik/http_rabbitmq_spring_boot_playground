@@ -7,9 +7,9 @@
 3. Choose any between two options below:
 3a. If you are using `Spring Cloud Streams`:
 
-> 1. create Exchange(topic type): `stream-cloud-stream`
-> 2. create queue: `stream-cloud-stream`
-> 3. bind the exchange (1) to the queue (2) with the routing key: `stream-cloud-stream`
+> 1. create Exchange(topic type): `spring-cloud-stream`
+> 2. create queue: `spring-cloud-stream`
+> 3. bind the exchange (1) to the queue (2) with the routing key: `spring-cloud-stream`
 > 4. In `test.jmx`, set `<stringProp name="HTTPSampler.path">spring-cloud-stream/post</stringProp>`.
 
 3b. If you are using `Spring AMQP`:
